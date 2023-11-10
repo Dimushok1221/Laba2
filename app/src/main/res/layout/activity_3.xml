@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3">
+
+    <Button
+        android:id="@+id/button_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left 50%"
+        android:layout_alignRight="@id/strut"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right 50%"
+        android:layout_alignLeft="@id/strut"
+        android:layout_alignParentRight="true"/>
+
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_center_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/button_center"
+        android:text="center_left" />
+
+    <Button
+        android:id="@+id/button_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/button_center_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center_right"
+        android:layout_toRightOf="@id/button_center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/button_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="go_to_act_main"
+        android:text="bottom" />
+
+</RelativeLayout>
